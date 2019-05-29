@@ -1,0 +1,153 @@
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF SIX  */
+.span_6_of_6 {
+	width: 100%;
+}
+
+.span_5_of_6 {
+  	width: 83.06%;
+}
+
+.span_4_of_6 {
+  	width: 66.13%;
+}
+
+.span_3_of_6 {
+  	width: 49.2%;
+}
+
+.span_2_of_6 {
+  	width: 32.26%;
+}
+
+.span_1_of_6 {
+  	width: 15.33%;
+}
+
+/* MY CSS */
+html{
+	background-color: black;
+	color: white;
+}
+
+/* TITLE NAVIGATION */
+
+
+#link1{
+	display: block;
+	padding-top: 10%;
+	margin-left: 35%;
+	
+}
+#link2{
+	display: block;
+	padding-top: 40px;
+	margin-left: 25%;
+}
+#link3{
+	display: block;
+	padding-top: 40px;
+	margin-left: 15%;
+}
+#link4{
+	display: block;
+	padding-top: 40px;
+	margin-left: 5%;
+}
+
+nav a{
+	font-size: 1.4em;
+	font-family: Orator Std;
+	color: white;
+	text-decoration: none;
+	
+}
+nav a:hover{
+	color: #ef8a32;
+	transition: color 0.5s;
+
+}
+@font-face {
+	font-family: Orator Std;
+	src: url(assets/OratorStd.ttf);
+}
+
+/* TITLE IMAGES */
+html, body, .austinImg {
+	height: 100%;
+	margin: 0;
+	}
+
+.austinImg{
+	display: block;
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	float: right;
+	width: auto;
+	height: auto;
+	max-height: 100%;
+	max-width: 40%;
+	z-index: -999;
+}
+
+.titleImg{
+	display: block;
+	margin: auto;
+	width: auto;
+	padding-top: 15%;
+}
+
+.subtitleImg{
+	padding-top: 10px;
+	max-width: 90%;
+}
+
+.box
+{
+  background : #19204B;
+  background : rgba(25, 32, 75, 1);
+}
+.boxside
+{
+  background : -moz-linear-gradient(50% 0% -90deg,rgba(35, 31, 32, 1) 1.8%,rgba(35, 32, 56, 1) 42.2%,rgba(35, 34, 98, 1) 100%);
+  background : -webkit-linear-gradient(-90deg, rgba(35, 31, 32, 1) 1.8%, rgba(35, 32, 56, 1) 42.2%, rgba(35, 34, 98, 1) 100%);
+  background : -webkit-gradient(linear,50% 0% ,50% 100% ,color-stop(0.018,rgba(35, 31, 32, 1) ),color-stop(0.422,rgba(35, 32, 56, 1) ),color-stop(1,rgba(35, 34, 98, 1) ));
+  background : -o-linear-gradient(-90deg, rgba(35, 31, 32, 1) 1.8%, rgba(35, 32, 56, 1) 42.2%, rgba(35, 34, 98, 1) 100%);
+  background : -ms-linear-gradient(-90deg, rgba(35, 31, 32, 1) 1.8%, rgba(35, 32, 56, 1) 42.2%, rgba(35, 34, 98, 1) 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#231F20', endColorstr='#232262' ,GradientType=0)";
+  background : linear-gradient(180deg, rgba(35, 31, 32, 1) 1.8%, rgba(35, 32, 56, 1) 42.2%, rgba(35, 34, 98, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#231F20',endColorstr='#232262' , GradientType=0);
+}
+
+
+
+
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_6, .span_2_of_6, .span_3_of_6, .span_4_of_6, .span_5_of_6, .span_6_of_6 { width: 100%; }
+	.austinImg { display: none; }
+	#link1, #link2, #link3, #link4 {text-align: center; margin:auto;}
+}
